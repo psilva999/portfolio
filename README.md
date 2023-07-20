@@ -1,2 +1,2 @@
 # portfolio
- my projects
+ my projects and skills
