@@ -1,6 +1,43 @@
+//dark-mode
+:root {
+  --background:#222425;
+  --main-color:#E2E5E9;
+  --main-title:#EBEDF0;
 
+  --opaque:rgba(226,229,233,.6);
+  --options:rgba(226,229,233,.8);
+  --transparent:rgba(226,229,233,.3);
+
+  --jet-platinum:#2A2C2D;
+}
+
+//white-mode
+// :root {
+//   --background:#E2E5E9;
+//   --main-color:#222425;
+//   --main-title:#222425;
+
+//   --opaque:rgba(34,36,37,.6);
+//   --options:rgba(34,36,37,.8);
+//   --transparent:rgba(34,36,37,.3);
+
+//   --jet-platinum:#D4D8DE;
+// }
+
+//button
+$blue-white:linear-gradient(0deg, #0360E2 0%, rgba(49,133,252,.3) 100%);
+
+$figma:#EFEFEF;
+$purpureus:#9D4EC5;
+$aureolin:#F7E018;
+$html:#FF5722;
+
+$emerald:#0ACF83;
+$type:#3078C6;
+$thulian:#CF649B;
+$vivid:#46CAF2;
 
 //px to rem
 @function rem($pxs, $remValue: 16) {
-  @return ($pxs / $remValue) * 1rem;
+  @return calc($pxs / $remValue) * 1rem;
 }
