@@ -1,7 +1,3 @@
-MY CV
-
-PROJETOS
-
 https://psilva999.github.io/passchendaele/
 
 https://psilva999.github.io/stories-sabaton/
@@ -13,5 +9,3 @@ https://psilva999.github.io/calculator/
 https://github.com/psilva999/JWSTelescope-demo
 
 https://psilva999.github.io/beloved-block-generator/
-
-Take whats left and live it properly

@@ -1,0 +1,41 @@
+@import 'config';
+
+//header 
+@keyframes header-absolute {
+  from {
+    padding-bottom:rem(5);
+    padding-top:rem(8);
+  }
+
+  to {
+    padding-bottom:rem(11);
+    padding-top:rem(12);
+  }
+}
+
+@keyframes header-fixed {
+  from {
+    padding-bottom:rem(11);
+    padding-top:rem(12);
+  }
+
+  to {
+    padding-bottom:rem(5);
+    padding-top:rem(8);
+  }
+}
+
+//header 
+@keyframes code {
+  0% {
+    opacity:.1;
+  }
+
+  50% {
+    opacity:1;
+  }
+
+  100% {
+    opacity:.1;
+  }
+}

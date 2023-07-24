@@ -1,6 +1,8 @@
 @import 'config';
+@import 'keyframes';
+@import 'mixins';
 
-* {
+*, *:before, *:after {
   border:0;
   margin:0;
   padding:0;
@@ -8,6 +10,33 @@
   border-spacing:0;
 }
 
-body {
-  
+*:focus {
+  outline:none;
 }
+
+html, body {
+  overflow-x:hidden;
+}
+
+body {
+  background:var(--erie-plati);
+  color:var(--main-color);
+  overflow-y:auto;
+
+  main, section, footer {
+    overflow:hidden;
+  }
+
+  h1 {
+    @include weight;
+  }
+
+  a {
+    text-decoration:none;
+  }
+}
+
+@import 'scrollbar';
+
+@import 'header';
+@import 'footer';

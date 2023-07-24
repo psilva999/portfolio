@@ -1,0 +1,24 @@
+//px to rem
+@function rem($pxs, $remValue: 16) {
+  @return calc($pxs / $remValue) * 1rem;
+}
+
+@mixin flex {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+@mixin grid {
+  display:grid;
+  place-items:center;
+}
+
+@mixin weight {
+  font-weight:200;
+  letter-spacing:rem(1);
+}
+
+@mixin transition {
+  transition:.2s;
+}

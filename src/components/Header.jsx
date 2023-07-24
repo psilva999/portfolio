@@ -1,4 +1,4 @@
-import lamp from '../assets/svg/0-lamp.svg'
+import { ReactComponent as Lamp } from '../assets/svg/0-lamp.svg'
 
 const Header = () => {
   return (
@@ -7,7 +7,7 @@ const Header = () => {
       <h1>Ps</h1>
 
       <nav>
-        <img src={ lamp } alt="dark/white mode"/>
+        <Lamp/>
         
         <a href="https://drive.google.com/file/d/1xNTHwoHV5vPMUzbKqf2dv0LbKYAcdJx7/view?usp=sharing" rel='noreferrer' target='_blank'>MY CV</a>
       </nav>

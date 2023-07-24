@@ -1,6 +1,6 @@
 //dark-mode
 :root {
-  --background:#222425;
+  --erie-plati:#222425;
   --main-color:#E2E5E9;
   --main-title:#EBEDF0;
 
@@ -11,9 +11,9 @@
   --jet-platinum:#2A2C2D;
 }
 
-//white-mode
+// white-mode
 // :root {
-//   --background:#E2E5E9;
+//   --erie-plati:#E2E5E9;
 //   --main-color:#222425;
 //   --main-title:#222425;
 
@@ -25,7 +25,10 @@
 // }
 
 //button
-$blue-white:linear-gradient(0deg, #0360E2 0%, rgba(49,133,252,.3) 100%);
+$blue-white:linear-gradient(180deg, #0360E2 00%, rgba(49,133,252,.6) 100%);
+
+$platina:#E2E5E9;
+$dark:#222425;
 
 $figma:#EFEFEF;
 $purpureus:#9D4EC5;
@@ -36,8 +39,3 @@ $emerald:#0ACF83;
 $type:#3078C6;
 $thulian:#CF649B;
 $vivid:#46CAF2;
-
-//px to rem
-@function rem($pxs, $remValue: 16) {
-  @return calc($pxs / $remValue) * 1rem;
-}
