@@ -23,6 +23,10 @@ body {
   color:var(--main-color);
   overflow-y:auto;
 
+  body, main {
+    @include grid;
+  }
+
   main, section, footer {
     overflow:hidden;
   }
@@ -39,4 +43,6 @@ body {
 @import 'scrollbar';
 
 @import 'header';
+
+@import 'svg';
 @import 'footer';

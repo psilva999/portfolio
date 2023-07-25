@@ -1,0 +1,74 @@
+@import 'config';
+@import 'mixins';
+
+main, footer { 
+  a:before, a:hover:before {
+    @include transition;
+  }
+
+  a:hover:before {
+    background:var(--main-color);
+  }
+
+  a:before {
+    content:'';
+    position:absolute;
+    margin-top:rem(1.5);
+    border-radius:rem(7);
+    z-index:-1;
+    background:var(--erie-plati);
+  }
+
+  a:first-child svg {
+    path:first-child {
+      fill:var(--main-color);
+    }
+
+    path:last-child {
+      fill:var(--erie-plati);
+    }
+
+    &:hover {
+      path:first-child {
+        fill:$tang;
+      }
+
+      path:last-child {
+        fill:var(--main-color);
+      }
+    }
+  }
+
+  a:nth-child(2) svg {
+    path {
+      fill:var(--main-color);
+    }
+
+    &, &:hover {
+      @include transition;
+    }
+
+    &:hover path {
+      fill:$tang;
+    }
+  }
+
+  svg {
+    & path, &:hover path {
+      @include transition;
+    }
+
+    &:hover path {
+      fill:$tang;
+    }
+  }
+}
+
+main a:before {
+
+}
+
+footer a:before {
+  width:rem(21);
+  height:rem(19);
+}
