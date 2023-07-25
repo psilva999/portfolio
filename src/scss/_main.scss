@@ -1,0 +1,61 @@
+@import 'config';
+
+main {
+  .name-social {
+    margin-top:12rem;
+    gap:rem(21);
+
+    &, article {
+      @include grid;
+    }
+
+    h1 {
+      color:var(--main-title);
+      font-size:rem(36);
+    }
+    
+    span {
+      color:var(--opaque);
+      @include weight;
+      font-size:rem(18);
+    }
+
+    .network {
+      @include flex;
+      gap:rem(13);
+    }
+  }
+
+  .handle-projects {
+    background:var(--jet-platinum);
+    padding:rem(7) rem(8);
+    @include flex;
+    margin-top:2.5rem;
+    gap:rem(5);
+
+    & {
+      border-radius:rem(24);
+    }
+
+    button {
+      border-radius:rem(18);
+      cursor:pointer;
+      color:var(--options);
+      background:transparent;
+      font-size:rem(16);
+      width:rem(145);
+      padding:rem(9) 0;
+      @include weight;
+
+      &, &.active, &:hover { 
+        @include transition;
+      }
+
+      &.active, &:hover {
+        background:var(--erie-plati);
+      }
+
+      @include weight;
+    }
+  }
+}

@@ -23,7 +23,7 @@ body.active {
   }
 }
 
-main, footer { 
+.network { 
   a:before, a:hover:before {
     @include transition;
   }
@@ -87,7 +87,8 @@ main, footer {
 }
 
 main a:before {
-
+  width:rem(22);
+  height:rem(22);
 }
 
 footer a:before {

@@ -4,7 +4,7 @@ import { ReactComponent as Linkedin } from '../assets/svg/6-linkedin.svg'
 
 const Network = () => {
   return (
-    <div>
+    <div className='network'>
       <a href="https://github.com/psilva999" rel='noreferrer' target='_blank'>
         <Github/> </a>
 

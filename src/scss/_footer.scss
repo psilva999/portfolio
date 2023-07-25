@@ -34,8 +34,8 @@ footer {
     color:var(--transparent);
 
     &:after {
-      content:"_";
       @include weight;
+      content:"_";
       font-size:rem(16);
       margin-top:rem(-4);
       position:absolute;

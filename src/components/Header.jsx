@@ -9,7 +9,7 @@ const Header = () => {
       <nav>
         <Lamp/>
         
-        <a href="https://drive.google.com/file/d/1xNTHwoHV5vPMUzbKqf2dv0LbKYAcdJx7/view?usp=sharing" rel='noreferrer' target='_blank'>MY CV</a>
+        <a href="https://drive.google.com/file/d/1qxfbSMlcxUgGIe6Ri0HktI0Ai3hKe43t/view?usp=drive_link" rel='noreferrer' target='_blank'>MY CV</a>
       </nav>
     </header>
 

@@ -1,5 +1,6 @@
 import Header from "./components/Header"
-// import Main from "./components/Main"
+import Berserk from "./components/Berserk"
+
 import Footer from "./components/Footer"
 
 
@@ -10,7 +11,7 @@ function App() {
       <Header/>
 
       <main>
-        {/* <Main/> */}
+        <Berserk/>
       </main>
 
       <Footer/>
