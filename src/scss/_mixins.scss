@@ -1,3 +1,5 @@
+@import 'keyframes';
+
 //px to rem
 @function rem($pxs, $remValue: 16) {
   @return calc($pxs / $remValue) * 1rem;
@@ -21,4 +23,21 @@
 
 @mixin transition {
   transition:.2s;
+}
+
+//animation
+@mixin from-top {
+  animation:show-from-top .6s linear forwards;
+}
+
+@mixin from-bottom {
+  animation:show-from-bottom .6s linear forwards;
+}
+
+@mixin from-left {
+  animation:show-from-left .6s linear forwards;
+}
+
+@mixin from-right {
+  animation:show-from-right .6s linear forwards;
 }

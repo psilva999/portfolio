@@ -16,21 +16,26 @@ main {
     h1 {
       color:var(--main-title);
       font-size:rem(36);
+      @include from-top;
     }
     
     span {
       color:var(--opaque);
-      @include weight;
       font-size:rem(18);
+      animation:to-appear .6s linear forwards;
+
+      @include weight;
     }
 
     .network {
+      @include from-bottom;
       @include flex;
       gap:rem(11);
     }
   }
 
   .handle-projects {
+    @include from-top;
     background:var(--jet-platinum);
     padding:rem(7) rem(8);
     @include flex;
@@ -64,11 +69,16 @@ main {
   }
 
   .projects {
+    display:none;
+  }
+
+  .projects.active {
     @include flex;
     width:rem(736);
     flex-wrap:wrap;
-    gap:rem(21);
-    margin-top:rem(34);
+    gap:rem(18);
+    row-gap:rem(21);
+    margin-top:rem(27);
     
     a {
       display:flex;
@@ -79,6 +89,14 @@ main {
       color:$white-opaque;
       overflow:hidden;
       @include transition;
+
+      &:nth-child(even) {
+        @include from-right;
+      }
+
+      &:nth-child(odd) {
+        @include from-left;
+      }
 
       &:nth-child(5) img {
         filter:brightness(40%);
