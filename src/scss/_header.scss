@@ -6,6 +6,7 @@ header {
   gap:rem(942);
   left:0;
   width:100vw;
+  z-index:3;
   background:var(--erie-plati);
   animation:header-absolute .3s linear forwards;
 
