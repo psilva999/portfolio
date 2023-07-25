@@ -1,10 +1,20 @@
 @import 'config';
 
+body.active footer {
+  h2 {
+    color:var(--options)  ;
+  }
+
+  p {
+    font-weight:400;
+  }
+}
+
 footer {
   width:100vw;
   position:absolute;
   bottom:0;
-  padding:.5rem 0;
+  padding:.25rem 0;
   gap:rem(722);
 
   &, article, div {

@@ -1,13 +1,35 @@
 @import 'config';
 @import 'mixins';
 
+body.active {
+  main, footer {
+    a:first-child svg:hover path:last-child {
+      fill:$platina;
+    }
+
+    a:last-child svg {
+      path {
+        fill:var(--main-color);
+      }
+  
+      &, &:hover {
+        @include transition;
+      }
+  
+      &:hover path {
+        fill:$tang;
+      }
+    }
+  }
+}
+
 main, footer { 
   a:before, a:hover:before {
     @include transition;
   }
 
   a:hover:before {
-    background:var(--main-color);
+    background:$platina;
   }
 
   a:before {
