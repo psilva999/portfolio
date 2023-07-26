@@ -2,10 +2,6 @@
 @import 'mixins';
 
 .skills {
-  display:none;
-}
-
-.skills.active {
   flex-wrap:wrap;
   width:rem(420);
   gap:rem(10);

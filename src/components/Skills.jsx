@@ -4,7 +4,7 @@ import { ReactComponent as Share } from '../assets/svg/3-share.svg'
 const Skills = () => {
   return (
 
-    <section className='skills active'>
+    <section className='skills'>
       <a href="https://www.origamid.com/certificate/d232dd7e" rel='noreferrer' target='_blank'> 
         <Figma/>
 

@@ -2,10 +2,6 @@
 @import 'mixins';
 
 .projects {
-  display:none;
-}
-
-.projects.active {
   @include flex;
   width:rem(810);
   flex-wrap:wrap;

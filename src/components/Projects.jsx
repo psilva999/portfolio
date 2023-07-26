@@ -11,7 +11,7 @@ import { ReactComponent as LinkSite } from '../assets/svg/1-link.svg'
 const Projects = () => {
   return (
 
-    <section className='projects active'>
+    <section className='projects'>
       <a href="https://psilva999.github.io/passchendaele/" rel='noreferrer' target='_blank'>
         <img src={ Ypres } alt="passchendaele"/>
 

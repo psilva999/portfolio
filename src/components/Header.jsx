@@ -12,8 +12,6 @@ const Header = () => {
 
   function handleHeader() {
     window.scrollY >= 3 ? setFixed(true) : setFixed(false)
-
-    console.log(window.scrollY)
   }
 
   return (
