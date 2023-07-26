@@ -9,4 +9,4 @@ Passchendaele: https://psilva999.github.io/passchendaele/
 
 Stories: https://psilva999.github.io/stories-sabaton/
 
-Calculator: https://psilva999.github.io/calculator/
+Sushi: https://psilva999.github.io/sushi/
