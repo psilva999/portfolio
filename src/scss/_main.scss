@@ -42,16 +42,15 @@ main {
     margin-top:2.5rem;
     gap:rem(5);
 
-    & {
-      border-radius:rem(24);
+    &, button {
+      border-radius:rem(36);
     }
 
     button {
-      border-radius:rem(18);
       cursor:pointer;
       color:var(--options);
       background:transparent;
-      font-size:rem(16);
+      font-size:rem(14);
       width:rem(145);
       padding:rem(9) 0;
       @include weight;

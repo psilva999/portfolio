@@ -1,0 +1,97 @@
+@import 'mixins';
+
+@media (max-width:rem(850)) {
+  body {
+    header, footer {
+      justify-content:space-between;
+      gap:0;
+    }
+
+    header {
+      padding-left:rem(23);
+      padding-right:rem(24);
+  
+      h1 {
+        left:0 !important;
+      }
+    }
+
+    footer {
+      padding:.25rem rem(24);
+
+      article {
+        lefT:0;
+      }
+    }
+  }
+}
+
+@media (max-width:rem(550)) {
+  body {
+    header {
+      padding-left:rem(17);
+      padding-right:rem(18);
+
+      h1 {
+        font-size:rem(18);
+
+        &:after {
+          font-size:rem(21);
+        }
+      }
+
+      nav {
+        gap:rem(13);
+        top:rem(0);
+      }
+
+      nav svg {
+        top:rem(0);
+        width:rem(16);
+      }
+
+      a {
+        font-size:rem(10);
+      }
+    }
+
+    footer {
+      padding:.25rem rem(18) .25rem rem(18);
+      flex-wrap:wrap;
+      row-gap:rem(1);
+
+      article {
+        left:rem(-1);
+        top:rem(-2);
+        gap:rem(12);
+      }
+
+      h2 {
+        font-size:rem(8);
+
+        &:after {
+          font-size:rem(11);
+          margin-top:rem(-3);
+        }
+      }
+
+      p {
+        font-size:rem(10);
+      }
+
+      div {
+        gap:rem(6);
+        
+        svg {
+          width:rem(18);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:rem(327)) {
+  body footer p {
+    width:rem(130);
+  }
+}
