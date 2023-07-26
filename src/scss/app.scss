@@ -23,6 +23,10 @@ body {
   color:var(--main-color);
   overflow-y:auto;
 
+  &, header, main, footer {
+    transition:background .2s;
+  }
+
   body, main {
     @include grid;
   }
@@ -41,6 +45,7 @@ body {
 }
 
 @import 'scrollbar';
+@import 'queries';
 
 @import 'header';
 @import 'main';
