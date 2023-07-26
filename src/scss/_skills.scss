@@ -1,0 +1,150 @@
+@import 'config';
+@import 'mixins';
+
+.skills {
+  display:none;
+}
+
+.skills.active {
+  flex-wrap:wrap;
+  width:rem(420);
+  gap:rem(10);
+  row-gap:rem(8);
+  margin-top:rem(27);
+  // background:grey;
+
+  &, a {
+    @include flex;
+  }
+
+  a {
+    color:var(--main-color);
+    background:var(--jet-platinum);
+    padding:rem(12) rem(16);
+    gap:rem(7);
+    border-radius:rem(3);
+    position:relative;
+
+    &:before {
+      content:'';
+      position:absolute;
+      width:rem(14);
+      height:rem(9);
+      border-radius:rem(1);
+      margin-top:rem(-23);
+    }
+
+    &:nth-child(1):before {
+      margin-left:rem(-102);
+      background:$figma;
+    }
+
+    &:nth-child(2):before {
+      margin-left:rem(-70);
+      background:$purpureus;
+    }
+
+    &:nth-child(3):before {
+      margin-left:rem(-138);
+      background:$aureolin;
+    }
+
+    &:nth-child(4):before {
+      margin-left:rem(-93);
+      background:$html;
+    }
+
+    &:nth-child(5):before {
+      margin-left:rem(-89);
+      background:$emerald;
+    }
+
+    &:nth-child(6):before {
+      margin-left:rem(-145);
+      background:$type;
+    }
+
+    &:nth-child(7):before {
+      margin-left:rem(-93);
+      background:$thulian;
+    }
+
+    &:nth-child(8):before {
+      margin-left:rem(-114);
+      background:$vivid;
+    }
+
+    &:first-child {
+      padding:rem(10) rem(16);
+
+      svg {
+        width:rem(19);
+      }
+    }
+
+    &:nth-child(2) svg {
+      width:rem(15);
+    }
+
+    &:first-child, &:nth-child(2), &:nth-child(3) {
+      left:rem(15);
+      @include from-right;
+    }
+
+    &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+      right:rem(10);
+      @include from-left;
+    }
+
+    &:nth-child(7), &:nth-child(8) {
+      right:rem(12);
+      @include from-right;
+    }
+
+    & svg path, & svg, & span, & h2, & {
+      @include transition;
+    }
+
+    &:hover {
+      background:var(--main-color);
+
+      svg path, span, h2, &, svg {
+        @include transition;
+      }
+
+      svg path {
+        fill:var(--jet-platinum);
+        opacity:.8;
+      }
+
+      span {
+        color:var(--jet-platinum);
+        opacity:.8;
+      }
+
+      h2 {
+        color:var(--jet-platinum);
+      }
+    }
+  }
+
+  svg path {
+    fill:var(--options);
+  }
+
+  svg, span {
+    position:relative;
+    top:rem(5);
+  }
+
+  h2 {
+    font-size:rem(14);
+    font-weight:400;
+    letter-spacing:rem(2);
+  }
+
+  span {
+    font-size:rem(12);
+    color:var(--transparent);
+  }
+}
