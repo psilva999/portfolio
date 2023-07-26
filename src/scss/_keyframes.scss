@@ -25,6 +25,18 @@
   }
 }
 
+@keyframes header-fixed-smartphone {
+  from {
+    padding-bottom:rem(11);
+    padding-top:rem(12);
+  }
+
+  to {
+    padding-bottom:rem(7);
+    padding-top:rem(8);
+  }
+}
+
 //header and footer
 @keyframes code {
   0% {

@@ -1,0 +1,39 @@
+@media (max-width:rem(700)) {
+  body main .skills a {
+    &:before {
+      margin-top:rem(-19);  
+    }
+
+    &:nth-child(1):before {
+      margin-left:rem(-94);
+    }
+
+    &:nth-child(2):before {
+      margin-left:rem(-55);
+    }
+
+    &:nth-child(3):before {
+      margin-left:rem(-117);
+    }
+
+    &:nth-child(4):before {
+      margin-left:rem(-76);
+    }
+
+    &:nth-child(5):before {
+      margin-left:rem(-73);
+    }
+
+    &:nth-child(6):before {
+      margin-left:rem(-125);
+    }
+
+    &:nth-child(7):before {
+      margin-left:rem(-77);
+    }
+
+    &:nth-child(8):before {
+      margin-left:rem(-94);
+    }
+  }
+}
