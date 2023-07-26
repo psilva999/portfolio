@@ -7,7 +7,7 @@
 
 .projects.active {
   @include flex;
-  width:rem(736);
+  width:rem(810);
   flex-wrap:wrap;
   gap:rem(18);
   row-gap:rem(21);
@@ -17,7 +17,7 @@
     display:flex;
     align-items:end;
     position:relative;
-    width:rem(350);
+    width:rem(390);
     height:rem(250);
     color:$white-opaque;
     overflow:hidden;
