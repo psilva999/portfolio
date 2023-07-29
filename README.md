@@ -10,3 +10,5 @@ Passchendaele: https://psilva999.github.io/passchendaele/
 Stories: https://psilva999.github.io/stories-sabaton/
 
 Sushi: https://psilva999.github.io/sushi/
+
+Calculator app: https://psilva999.github.io/calculator-app/

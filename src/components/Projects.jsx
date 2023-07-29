@@ -3,7 +3,6 @@ import Stories from '../assets/images/1-stories.jpg'
 import Sushi from '../assets/images/4-sushi.jpg'
 
 import Calculator from '../assets/images/3-calculator.jpg'
-import Bb from '../assets/images/6-bb.jpg'
 import Jws from '../assets/images/5-jws.jpg'
 
 import { ReactComponent as LinkSite } from '../assets/svg/1-link.svg'
@@ -36,18 +35,10 @@ const Projects = () => {
         </article>
       </a>
 
-      <a href="https://psilva999.github.io/calculator/" rel='noreferrer' target='_blank'>
+      <a href="https://psilva999.github.io/calculator-app/" rel='noreferrer' target='_blank'>
         <img src={ Calculator } alt="Calculator"/>
 
         <article> <h2>Calculator</h2>
-          <LinkSite/>
-        </article>
-      </a>
-
-      <a href="https://psilva999.github.io/beloved-block-generator/" rel='noreferrer' target='_blank'>
-        <img src={ Bb } alt="generator"/>
-
-        <article> <h2>Beloved Block</h2>
           <LinkSite/>
         </article>
       </a>
